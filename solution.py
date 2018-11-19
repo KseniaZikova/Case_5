@@ -312,6 +312,128 @@ yds_16 = (a + b)
 td_16 = text[text.find(">",one_name)+322:text.find("&",one_name)-1111]
 int_16 = text[text.find(">",one_name)+375:text.find("&",one_name)-1058]
 print('{:20} {:7} {:7} {:7} {:7} {:7}'.format(name,comp_16,att_16,yds_16,td_16,int_16))
+#17
+url = 'http://www.nfl.com/player/mattschaub/2505982/profile'
+f = urllib.request.urlopen(url)
+s = f.read()
+text = str(s)
+part_name = text.find("player-name")
+name = text[text.find('>',part_name)+1:text.find('&',part_name)]
+
+one_name = text.find("TOTAL")
+c_17 = text[text.find(">",one_name)+47:text.find("&",one_name)-1392]
+celoe_1 = c_17.find(",")
+q = c_17[:celoe_1]
+w = c_17[celoe_1+1:]
+comp_17 = (q + w)
+at_17 = text[text.find(">",one_name)+103:text.find("&",one_name)-1336]
+celoe_2 = at_17.find(",")
+e = at_17[:celoe_2]
+r = at_17[celoe_2+1:]
+att_17 = (e + r)
+fore_17 = text[text.find(">",one_name)+214:text.find("&",one_name)-1224]
+celoe_3 = fore_17.find(",")
+a = fore_17[:celoe_3]
+b = fore_17[celoe_3+1:]
+yds_17 = (a + b)
+td_17 = text[text.find(">",one_name)+325:text.find("&",one_name)-1116]
+int_17 = text[text.find(">",one_name)+379:text.find("&",one_name)-1063]
+print('{:20} {:7} {:7} {:7} {:7} {:7}'.format(name,comp_17,att_17,yds_17,td_17,int_17))
+#18
+url = 'http://www.nfl.com/player/derekanderson/2506546/profile'
+f = urllib.request.urlopen(url)
+s = f.read()
+text = str(s)
+part_name = text.find("player-name")
+name = text[text.find('>',part_name)+1:text.find('&',part_name)]
+
+one_name = text.find("TOTAL")
+comp_18 = text[text.find(">",one_name)+47:text.find("&",one_name)-1388]
+at_18 = text[text.find(">",one_name)+101:text.find("&",one_name)-1332]
+celoe_2 = at_18.find(",")
+e = at_18[:celoe_2]
+r = at_18[celoe_2+1:]
+att_18 = (e + r)
+fore_18 = text[text.find(">",one_name)+212:text.find("&",one_name)-1220]
+celoe_3 = fore_18.find(",")
+a = fore_18[:celoe_3]
+b = fore_18[celoe_3+1:]
+yds_18 = (a + b)
+td_18 = text[text.find(">",one_name)+323:text.find("&",one_name)-1113]
+int_18 = text[text.find(">",one_name)+376:text.find("&",one_name)-1060]
+print('{:20} {:7} {:7} {:7} {:7} {:7}'.format(name,comp_18,att_18,yds_18,td_18,int_18))
+#19
+url = 'http://www.nfl.com/player/lukemccown/2506053/profile'
+f = urllib.request.urlopen(url)
+s = f.read()
+text = str(s)
+part_name = text.find("player-name")
+name = text[text.find('>',part_name)+1:text.find('&',part_name)]
+
+one_name = text.find("TOTAL")
+comp_19 = text[text.find(">",one_name)+47:text.find("&",one_name)-1415]
+att_19 = text[text.find(">",one_name)+101:text.find("&",one_name)-1361]
+fore_19 = text[text.find(">",one_name)+210:text.find("&",one_name)-1250]
+celoe = fore_19.find(",")
+a = fore_19[:celoe]
+b = fore_19[celoe+1:]
+yds_19 = (a + b)
+td_19 = text[text.find(">",one_name)+320:text.find("&",one_name)-1144]
+int_19 = text[text.find(">",one_name)+372:text.find("&",one_name)-1091]
+print('{:20} {:7} {:7} {:7} {:7} {:7}'.format(name,comp_19,att_19,yds_19,td_19,int_19))
+#20
+url = 'http://www.nfl.com/player/mattbarkley/2539308/profile'
+f = urllib.request.urlopen(url)
+s = f.read()
+text = str(s)
+part_name = text.find("player-name")
+name = text[text.find('>',part_name)+1:text.find('&',part_name)]
+
+one_name = text.find("TOTAL")
+comp_20 = text[text.find(">",one_name)+47:text.find("&",one_name)-1381]
+att_20 = text[text.find(">",one_name)+101:text.find("&",one_name)-1327]
+fore_20 = text[text.find(">",one_name)+210:text.find("&",one_name)-1216]
+celoe = fore_20.find(",")
+a = fore_20[:celoe]
+b = fore_20[celoe+1:]
+yds_20 = (a + b)
+td_20 = text[text.find(">",one_name)+320:text.find("&",one_name)-1109]
+int_20 = text[text.find(">",one_name)+373:text.find("&",one_name)-1056]
+print('{:20} {:7} {:7} {:7} {:7} {:7}'.format(name,comp_20,att_20,yds_20,td_20,int_20))
+#21
+url = 'http://www.nfl.com/player/thadlewis/497121/profile'
+f = urllib.request.urlopen(url)
+s = f.read()
+text = str(s)
+part_name = text.find("player-name")
+name = text[text.find('>',part_name)+1:text.find('&',part_name)]
+
+one_name = text.find("TOTAL")
+comp_21 = text[text.find(">",one_name)+47:text.find("&",one_name)-1413]
+att_21 = text[text.find(">",one_name)+101:text.find("&",one_name)-1359]
+fore_21 = text[text.find(">",one_name)+210:text.find("&",one_name)-1248]
+celoe = fore_21.find(",")
+a = fore_21[:celoe]
+b = fore_21[celoe+1:]
+yds_21 = (a + b)
+td_21 = text[text.find(">",one_name)+320:text.find("&",one_name)-1142]
+int_21 = text[text.find(">",one_name)+372:text.find("&",one_name)-1090]
+print('{:20} {:7} {:7} {:7} {:7} {:7}'.format(name,comp_21,att_21,yds_21,td_21,int_21))
+#22
+url = 'http://www.nfl.com/player/seanmannion/2552576/profile'
+f = urllib.request.urlopen(url)
+s = f.read()
+text = str(s)
+part_name = text.find("player-name")
+name = text[text.find('>',part_name)+1:text.find('&',part_name)]
+
+one_name = text.find("TOTAL")
+comp_22 = text[text.find(">",one_name)+47:text.find("&",one_name)-1375]
+att_22 = text[text.find(">",one_name)+100:text.find("&",one_name)-1322]
+yds_22 = text[text.find(">",one_name)+208:text.find("&",one_name)-1213]
+td_22 = text[text.find(">",one_name)+316:text.find("&",one_name)-1107]
+int_22 = text[text.find(">",one_name)+368:text.find("&",one_name)-1055]
+print('{:20} {:7} {:7} {:7} {:7} {:7}'.format(name,comp_22,att_22,yds_22,td_22,int_22))
 
 
 
